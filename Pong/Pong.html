@@ -1,0 +1,26 @@
+<html>
+ <head>
+ <title> Pong </title>
+  <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"> </script>  
+  <script>  
+  
+  sjs.onHit["top_screen", "left_screen"], function("ball, edge){
+  score--;
+  sjs.bounceOff(ball,edge);
+  score_txt.setText("A Score: "+score);
+  if(score <= 0){
+  window.location = "index.html";
+  });
+  
+
+  </script>  
+ </head>  
+ <body onload="good()">
+ <hl> Pong Game </hl>
+  <div id="target" style="margin:auto;background:lightgrey;"></div> 
+  <center>
+  <u onclick="good()"> You can do it! </u> 
+  <br />This is pong!
+  </center>
+ </body>
+</html>

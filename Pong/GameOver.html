@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Pong Game Over! </title>
+</head>
+<script src="simply.js"></script>
+<script>
+		function run (){
+		sjs.open("target",800,550);
+		var menu_text = new sjs.Text("Well.... You lost. Good Job.",50,"blue");
+			menu_text.centerH();
+
+		var play = new sjs.Text("Press to play.... again.", 30, "white");
+			play.centerH().offset(0,45);
+
+		var startBtn = new sjs.Button("Try one more time?", function(){
+			startBtn.setSize(30,60);
+			window.location = "PongRight.html";
+		});
+			startBtn.center();
+		}
+
+</script>
+<body onLoad="run()">
+<div id="target" style="margin:auto;background:red;"></div>
+</body>
+</html>

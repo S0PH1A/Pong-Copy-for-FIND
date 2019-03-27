@@ -1,0 +1,15 @@
+<html>
+ <head>
+  <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"> </script>  
+  <script>  
+   function run(){
+     sjs.open("target", 300, 200);
+   } 
+  </script>  
+ </head>  
+ <body onload="run()">
+  <div id="target" style="background:lightgrey;">
+  </div>
+ </body>
+</html>
+	
